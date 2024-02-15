@@ -1,8 +1,8 @@
 # Formação Engenharia de Dados
 
-## O que é Data Warehouse?
+## DW, BI, Data Marts e OLTPs
 
-É um banco de dados relacional usado para armazenar informações relativas às atividades de uma organização de forma consolidada.
+É o ponto central de uma estrutura de BI. O DW é um banco de dados relacional usado para armazenar informações consolidadas relativas às atividades de uma organização.
 
 Possibilita a análise de grandes volumes de dados, que são coletados a partir de sistemas transacionais (OLTP - Online Transaction Processing).
 
