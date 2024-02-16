@@ -28,7 +28,7 @@ Ref: https://aws.amazon.com/pt/what-is/data-warehouse/
 
 ### Data Marts
 
-Um data mart é um sistema de armazenamento de dados que contém informações específicas da unidade de negócios de uma organização.
+Um Data Mart é um Data Warehouse que atende às necessidades de uma equipe ou unidade de negócios específica, como finanças, marketing ou vendas.
 
 Ele contém uma parte pequena e selecionada dos dados contidos no DW.
 
