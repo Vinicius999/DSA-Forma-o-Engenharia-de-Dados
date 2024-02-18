@@ -66,6 +66,13 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 
 - *image-01*
 - *image-02*
+- 
+
+## Fases de Design de um Data Warehouse
+- Modelo de Negócio
+- Modelo Lógico
+- Modelo Dimensional
+- Modelo Físico
 
 
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
