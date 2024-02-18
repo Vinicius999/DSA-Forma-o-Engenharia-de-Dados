@@ -2,6 +2,8 @@
 
 ## Data Warehouses, Business Intelligence, Data Marts e OLTPs
 
+*image-01*
+
 ### Business intelligence (BI)
 Business intelligence (BI) refere-se a um conjunto de metodologias e recursos que permite às empresas acessar, analisar e desenvolver insights acionáveis a partir de dados para tomar decisões de negócios.
 
@@ -53,7 +55,15 @@ Ref: https://aws.amazon.com/pt/what-is/data-mart/
 Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 
 ## Extraction, Transformation e Loading (ETL)
+
+*image-01*
+
 - **Extração**: Fase em que os dados são extraídos das fonte de dados, como os OLTPs, e são conduzidos para a *staging area* (área de transição ou temporária), onde são convertidos para um único formato.
 - **Transformação**: É nesta etapa que realizamos os devidos ajustes, podendo assim melhorar a qualidade dos dados e consolidar dados de duas ou mais fontes.
 - **Carga**: Consiste em fisicamente estruturar e carregar os dados para seu destino, sendo ele um Data Warehouse ou Data Mart.
+
+## Business Intelligence vs Data Science
+
+- *image-01*
+- *image-02*
 
