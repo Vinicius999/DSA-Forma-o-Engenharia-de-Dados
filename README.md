@@ -2,7 +2,7 @@
 
 ## Data Warehouses, Business Intelligence, Data Marts e OLTPs
 
-*image-01*
+![data-warehouse-business-intelligence-datamart-oltp](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/dw-bi-datamart-oltp.png)
 
 ### Business intelligence (BI)
 Business intelligence (BI) refere-se a um conjunto de metodologias e recursos que permite às empresas acessar, analisar e desenvolver insights acionáveis a partir de dados para tomar decisões de negócios.
@@ -64,9 +64,9 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 
 ## Business Intelligence vs Data Science
 
-- *image-01*
-- *image-02*
-- 
+![business-intelligence-vs-data-science](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/business-intelligence-vs-data-science.png)
+![business-intelligence-vs-data-science-02](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/business-intelligence-vs-data-science-02.png)
+
 
 ## Fases de Design de um Data Warehouse
 - Modelo de Negócio
