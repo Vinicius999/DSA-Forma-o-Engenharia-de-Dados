@@ -101,13 +101,19 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 - Estabelecer links entre Fatos e Dimensões
 - Modelar Dimensão Tempo
 
-## Data Warehouse Schemas
+## Data Warehouse Schemas: 3FN, Star Schema, Snowflake Schema
 - Terceira Forma Normal (3FN)
-  ![3NF](link)
+  
+  ![3NF](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/3NF.png)
+  
 - Star Schema
-  ![Star Schema](link)
+  
+  ![Star Schema](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/star-schema.png)
+  
 - Snowflake Schema
-  ![Snowflake Schema](link)
+  
+  ![Snowflake Schema](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/snowflake-schema.png)
+
   
 
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
