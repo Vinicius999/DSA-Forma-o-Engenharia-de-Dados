@@ -114,6 +114,19 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
   
   ![Snowflake Schema](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/snowflake-schema.png)
 
+## Tabelas FATO e DIMENSÃO
+### Tabela FATO
+- Contém métricas numéricas do negócio
+- Tabela com maior volume de dados
+- Cresce rapidamente
+- Pode conter dadso base, derivados e sumarizados
+- São relacionadas as tabelas de DIMENSÃO com chaves estrangeeiras que referenciam as chaves primárias nas tabelas DIMENSÃO.
+
+### Tabelas DIMENSÃO
+- Contém informação textual que representa atributos de negócio
+- Contém dados relativamente estáticos
+- São relacionadas com a Tabela Fato
+
   
 
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
