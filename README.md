@@ -4,6 +4,7 @@
 
 ![data-warehouse-business-intelligence-datamart-oltp](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/dw-bi-datamart-oltp.png)
 
+
 ### Business intelligence (BI)
 Business intelligence (BI) refere-se a um conjunto de metodologias e recursos que permite às empresas acessar, analisar e desenvolver insights acionáveis a partir de dados para tomar decisões de negócios.
 
@@ -69,10 +70,10 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 
 
 ## Fases de Design de um Data Warehouse
-- Modelo de Negócio
-- Modelo Lógico
-- Modelo Dimensional
-- Modelo Físico
+- Modelo de Negócio: identificar o preblema a ser resolvido.
+- Modelo Lógico: identififar se os dados dados suportam a solução proposta na modelagem de negócio.
+- Modelo Dimensional: identificar as tabelas **fato** e **dimensões**.
+- Modelo Físico: implementar o modelo dimensional.
 
 
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
