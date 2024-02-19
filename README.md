@@ -101,7 +101,7 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 - Estabelecer links entre Fatos e Dimensões
 - Modelar Dimensão Tempo
 
-## Data Warehouse Schemas: 3FN, Star Schema, Snowflake Schema
+#### Data Warehouse Schemas: 3FN, Star Schema, Snowflake Schema
 - Terceira Forma Normal (3FN)
   
   ![3NF](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/3NF.png)
@@ -114,19 +114,28 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
   
   ![Snowflake Schema](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/snowflake-schema.png)
 
-## Tabelas FATO e DIMENSÃO
-### Tabela FATO
+#### Tabelas FATO e DIMENSÃO
+##### Tabela FATO
 - Contém métricas numéricas do negócio
 - Tabela com maior volume de dados
 - Cresce rapidamente
 - Pode conter dadso base, derivados e sumarizados
 - São relacionadas as tabelas de DIMENSÃO com chaves estrangeeiras que referenciam as chaves primárias nas tabelas DIMENSÃO.
 
-### Tabelas DIMENSÃO
+##### Tabelas DIMENSÃO
 - Contém informação textual que representa atributos de negócio
 - Contém dados relativamente estáticos
 - São relacionadas com a Tabela Fato
 
+### Definindo o Modelo Físico
+- Traduz do design dimensional para o modelo físico
+- Atualiza os metadados
+- Determina a arquitetura de hardware
+- Define estratédias de armazenamento
+- Sizing
+- Particionamento
+- Indexação
+- Segurança
   
 
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
