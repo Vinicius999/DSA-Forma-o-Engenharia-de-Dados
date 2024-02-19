@@ -91,4 +91,23 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
   - Documentar registros de mudanças
   - Registrar melhorias ao longo do tempo
 
+### Definindo o Modelo de Lógico
+- **Modelo Entidade-Relacionamento**
+- **Diagrama Entidade-Relacionamento**
+
+### Definindo o Modelo de Dimensional
+- Identificar a tabela FATO
+- Identificar as tabelas DIMENSÕES
+- Estabelecer links entre Fatos e Dimensões
+- Modelar Dimensão Tempo
+
+## Data Warehouse Schemas
+- Terceira Forma Normal (3FN)
+  ![3NF](link)
+- Star Schema
+  ![Star Schema](link)
+- Snowflake Schema
+  ![Snowflake Schema](link)
+  
+
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
