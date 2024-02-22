@@ -141,12 +141,22 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 - Reflete a visão que o usuário tem do negócio e suas medidas;
 - É simples;
 - É facilmente compreensível e memorizável para o usuário;
-- Geram esquemas de bancos de dados que permitem bom ddesempenho para consultas com grandes volume de dados.
+- Geram esquemas de bancos de dados que permitem bom desempenho para consultas com grandes volume de dados.
 
 ## Definição e Objetivo do Modelo Entidade-Relacionamento
 O **MER** (Modelo Entidade Relacionamento) é utilizado para descrever os objetos do mundo real através de entidades, com suas propriedades que são os atributos e os seus relacionamentos.
 
 O **DER** (Diagrama Entidade-Relacionamento) é utilizado para representar em forma gráfica o que foi descrito no MER (Modelo Entidade Relacionamento).
 
+Ref.: https://www.alura.com.br/artigos/mer-e-der-funcoes
 
+## Entidades
+É um conjunto de **objetos do mundo real** sobre os quais se deseja manter informações no banco de dados, onde cada objeto é distinguível de outros objetos. Uma entidade pode representar **objetos concretos** (uma pessoa, por exemplo) e **objetos abstratos** (um departamento). No **DER**, cada entidade é representada através de um retângulo.
+Como exemplo, no Sistema Bancário, podemos ter as seguintes Entidades:
+- Client
+- Conta Corrente
+- Conta Poupança
+- Agência
+
+- 
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
