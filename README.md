@@ -138,10 +138,15 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 - Segurança
 
 ## Características de um bom modelo de dados para DW:
-- reflete a visão que o usuário tem do negócio e suas medidas;
+- Reflete a visão que o usuário tem do negócio e suas medidas;
 - É simples;
 - É facilmente compreensível e memorizável para o usuário;
 - Geram esquemas de bancos de dados que permitem bom ddesempenho para consultas com grandes volume de dados.
+
+## Definição e Objetivo do Modelo Entidade-Relacionamento
+O **MER** (Modelo Entidade Relacionamento) é utilizado para descrever os objetos do mundo real através de entidades, com suas propriedades que são os atributos e os seus relacionamentos.
+
+O **DER** (Diagrama Entidade-Relacionamento) é utilizado para representar em forma gráfica o que foi descrito no MER (Modelo Entidade Relacionamento).
 
 
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
