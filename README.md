@@ -93,7 +93,7 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 
 ### Definindo o Modelo de Lógico
 - **Modelo Entidade-Relacionamento**
-- **Diagrama Entidade-Relacionamento**
+- **Diagrama Entidade-Relacionamento**: abstração visual dos relacionamentos e atributos entre as entidades.
 
 ### Definindo o Modelo de Dimensional
 - Identificar a tabela FATO
@@ -136,6 +136,12 @@ Ref: https://aws.amazon.com/pt/compare/the-difference-between-olap-and-oltp/
 - Particionamento
 - Indexação
 - Segurança
-  
+
+## Características de um bom modelo de dados para DW:
+- reflete a visão que o usuário tem do negócio e suas medidas;
+- É simples;
+- É facilmente compreensível e memorizável para o usuário;
+- Geram esquemas de bancos de dados que permitem bom ddesempenho para consultas com grandes volume de dados.
+
 
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
