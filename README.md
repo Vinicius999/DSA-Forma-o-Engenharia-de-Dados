@@ -165,5 +165,8 @@ Já em um **Sistema de Controle de Produção de Indústria**, temos:
 - Departamento
 - Estoque
 
-  
+
+
+
+<h4 align="center"> &#128679; Next: ##Bloco005 - Tipos de Entidade ... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
