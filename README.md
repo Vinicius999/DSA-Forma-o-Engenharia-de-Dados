@@ -152,11 +152,18 @@ Ref.: https://www.alura.com.br/artigos/mer-e-der-funcoes
 
 ## Entidades
 É um conjunto de **objetos do mundo real** sobre os quais se deseja manter informações no banco de dados, onde cada objeto é distinguível de outros objetos. Uma entidade pode representar **objetos concretos** (uma pessoa, por exemplo) e **objetos abstratos** (um departamento). No **DER**, cada entidade é representada através de um retângulo.
-Como exemplo, no Sistema Bancário, podemos ter as seguintes Entidades:
-- Client
+
+Como exemplo, em um **Sistema Bancário**, podemos ter as seguintes Entidades:
+- Cliente
 - Conta Corrente
 - Conta Poupança
 - Agência
 
-- 
+Já em um **Sistema de Controle de Produção de Indústria**, temos:
+- Produto
+- Empregado
+- Departamento
+- Estoque
+
+  
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
