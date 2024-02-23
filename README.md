@@ -165,6 +165,11 @@ Já em um **Sistema de Controle de Produção de Indústria**, temos:
 - Departamento
 - Estoque
 
+### Tipos de Entidades
+- **Entidades Fortes (Independentes):** são aquelas cuja existência independe de outras entidades, ou seja, por si só elas já possuem total sentido de existir. Em um sistema de vendas, a entidade **produto**, por exemplo, independe de quaisquer outras para existir.
+- **Entidades Fracas (Dependentes):** as fracas são aquelas que dependem de outras entidades para existirem, pois individualmente elas não fazem sentido. Mantendo o mesmo exemplo, a entidade **venda** depende da entidade **produto**, pois uma venda sem itens não tem sentido.
+- **Entidades Assossiativas:** esse tipo de entidade surge quando há a necessidade de associar uma entidade a um relacionamento existente. Na modelagem Entidade-Relacionamento não é possível que um relacionamento seja associado a uma entidade, então tornamos esse relacionamento uma entidade associativa, que a partir daí poderá se relacionar com outras entidades. Para melhor compreender esse conceito, tomemos como exemplo uma aplicação de vendas em que existem as entidades Produto e Venda, que se relacionam na forma muitos-para-muitos, uma vez que em uma venda pode haver vários produtos e um produto pode ser vendido várias vezes (no caso, unidades diferentes do mesmo produto). Em determinado momento, a empresa passou a entregar **brindes** para os clientes que comprassem um determinado produto. A entidade **Brinde**, então, está relacionada não apenas com a Venda, nem com o Produto, mas sim com o item da venda, ou seja, com o relacionamento entre as duas entidades citadas anteriormente. Como não podemos associar a entidade Brinde com um relacionamento, criamos então a entidade associativa "Item da Venda", que contém os atributos identificadores das entidades Venda e Produto, além de informações como quantidade e número de série, para casos específicos. A partir daí, podemos relacionar o **Brinde** com o Item da Venda, indicando que aquele prêmio foi dado ao cliente por comprar aquele produto especificamente.
+
 
 
 
