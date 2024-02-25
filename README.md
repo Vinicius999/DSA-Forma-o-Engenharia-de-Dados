@@ -184,6 +184,8 @@ Quanto à sua **estrutura**, podemos ainda classificá-los como:
 - **Simples:** um único atributo define uma característica da entidade. Exemplos: `nome`, `peso`.
 - **Compostos:** quando para definir uma informação da entidade, são usados vários atributos. Por exemplo, o `endereço` pode ser composto por `rua`, `número`, `bairro`, etc.
 
+Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
+Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
 
 <h4 align="center"> &#128679; Next: ##Bloco005 - Tipos de Entidade ... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
