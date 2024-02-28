@@ -194,8 +194,14 @@ O relacionamento é uma associação entre entidades. Normalmente, são represen
 
 - **Relacionamento n:n ou \*:\* (muitos para muitos):** neste tipo de relacionamento cada entidade, de ambos os lados, podem referenciar múltiplas unidades da outra. Por exemplo, em um sistema de biblioteca, um título pode ser escrito por vários autores, ao mesmo tempo em que um autor pode escrever vários títulos. Assim, um objeto do tipo autor pode referenciar múltiplos objetos do tipo título, e vice versa.
 
+### Cardinalidade
+Cardinalidade representa o **número de ocorrências** de uma entidade **A** com relação auma outra entidade **B**.
+#### Representação
+- **(cardinalidade máxima, cardinalidade mínima)**
+- Cardinalidade possíveis: `(1, 1)`; `(1, N)`; `(0, 1)`; `(0, N)`; `(N, N)`
 
 Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
+
 Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
 
 <h4 align="center"> &#128679; Next: ##Bloco005 - Tipos de Entidade ... &#128679; </h4>
