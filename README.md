@@ -187,6 +187,12 @@ Quanto à sua **estrutura**, podemos ainda classificá-los como:
 ## Relacionamento
 O relacionamento é uma associação entre entidades. Normalmente, são representados por **verbos**. Como, por exemplo, “uma **pessoa** `trabalha` para uma **empresa**”. No DER, os `relacionamentos` são representados através de um losango e linhas que ligam as `entidades` entidades. 
 
+### Tipos de relacionamentos
+- **Relacionamento 1:1 (um para um)**: cada uma das duas entidades envolvidas referenciam obrigatoriamente apenas uma unidade da outra. Por exemplo, em um banco de dados de currículos, cada usuário cadastrado pode possuir apenas um currículo na base, ao mesmo tempo em que cada currículo só pertence a um único usuário cadastrado.
+
+- **Relacionamento 1:n ou 1:\* (um para muitos):** uma das entidades envolvidas pode referenciar várias unidades da outra, porém, do outro lado cada uma das várias unidades referenciadas só pode estar ligada uma unidade da outra entidade. Por exemplo, em um sistema de plano de saúde, um usuário pode ter vários dependentes, mas cada dependente só pode estar ligado a um usuário principal. Note que temos apenas duas entidades envolvidas: usuário e dependente. O que muda é a quantidade de unidades/exemplares envolvidas de cada lado.
+
+- **Relacionamento n:n ou \*:\* (muitos para muitos):** neste tipo de relacionamento cada entidade, de ambos os lados, podem referenciar múltiplas unidades da outra. Por exemplo, em um sistema de biblioteca, um título pode ser escrito por vários autores, ao mesmo tempo em que um autor pode escrever vários títulos. Assim, um objeto do tipo autor pode referenciar múltiplos objetos do tipo título, e vice versa.
 
 
 Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
