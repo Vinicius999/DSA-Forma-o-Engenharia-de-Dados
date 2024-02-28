@@ -200,6 +200,19 @@ Cardinalidade representa o **número de ocorrências** de uma entidade **A** com
 - **(cardinalidade máxima, cardinalidade mínima)**
 - Cardinalidade possíveis: `(1, 1)`; `(1, N)`; `(0, 1)`; `(0, N)`; `(N, N)`
 
+Exemplo de relacionamento **obrigatório** (mínimo 1) :
+- **1 `cliente`** pode ter no **mínimo 1** e no **máximo N `contas`****
+- **1 `conta`** pode ter no **mínimo 1** e no **máximo 1 `cliente`**
+
+![cardinality](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/4513b708a647da7b7234c71727e966a737ee25f4/images/cardinality.png)
+
+Exemplo de relacionamento **opcional** (mínimo 0) :
+- **1 `empregado`** pode gerenciar no **mínimo 0** e no **máximo 1 `departamento`****
+- **1 `departamento`** pode ser gerenciado por no **mínimo 1** e no **máximo 1 `empregado`**
+
+![cardinality-2](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/dd63d3308101a923f2fd8051415570d8712356b8/images/cardinality-2.png)
+
+
 Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
 
 Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
