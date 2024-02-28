@@ -184,6 +184,11 @@ Quanto à sua **estrutura**, podemos ainda classificá-los como:
 - **Simples:** um único atributo define uma característica da entidade. Exemplos: `nome`, `peso`.
 - **Compostos:** quando para definir uma informação da entidade, são usados vários atributos. Por exemplo, o `endereço` pode ser composto por `rua`, `número`, `bairro`, etc.
 
+## Relacionamento
+O relacionamento é uma associação entre entidades. Normalmente, são representados por **verbos**. Como, por exemplo, “uma **pessoa** `trabalha` para uma **empresa**”. No DER, os `relacionamentos` são representados através de um losango e linhas que ligam as `entidades` entidades. 
+
+
+
 Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
 Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
 
