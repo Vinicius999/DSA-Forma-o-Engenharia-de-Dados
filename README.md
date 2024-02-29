@@ -184,6 +184,10 @@ Quanto à sua **estrutura**, podemos ainda classificá-los como:
 - **Simples:** um único atributo define uma característica da entidade. Exemplos: `nome`, `peso`.
 - **Compostos:** quando para definir uma informação da entidade, são usados vários atributos. Por exemplo, o `endereço` pode ser composto por `rua`, `número`, `bairro`, etc.
 
+Quanto à **cardinalidade**, os atributos podem ser:
+- **Monovalorado:** possui valor único para cada ocorrência de uma entidade. Exemplo: `nome` é um atributo monovalorado da entidade `Empregado`, pois um empregado pode ter apenas 1 nome.
+- **Multivalorado:** pode possuir mais de um valor para cada ocorrência de uma entidade. Exemplo: `telefone` é um atributo multivalorado da entidade `Empregado`, pois um empregado pode ter vários números de telefone.
+
 ## Relacionamento
 O relacionamento é uma associação entre entidades. Normalmente, são representados por **verbos**. Como, por exemplo, “uma **pessoa** `trabalha` para uma **empresa**”. No DER, os `relacionamentos` são representados através de um losango e linhas que ligam as `entidades` entidades. 
 
@@ -195,23 +199,25 @@ O relacionamento é uma associação entre entidades. Normalmente, são represen
 - **Relacionamento n:n ou \*:\* (muitos para muitos):** neste tipo de relacionamento cada entidade, de ambos os lados, podem referenciar múltiplas unidades da outra. Por exemplo, em um sistema de biblioteca, um título pode ser escrito por vários autores, ao mesmo tempo em que um autor pode escrever vários títulos. Assim, um objeto do tipo autor pode referenciar múltiplos objetos do tipo título, e vice versa.
 
 ### Cardinalidade
-Cardinalidade representa o **número de ocorrências** de uma entidade **A** com relação auma outra entidade **B**.
-#### Representação
+Cardinalidade representa o **número de ocorrências** de uma entidade **A** com relação a uma outra entidade **B**.
+##### Representação
 - **(cardinalidade máxima, cardinalidade mínima)**
 - Cardinalidade possíveis: `(1, 1)`; `(1, N)`; `(0, 1)`; `(0, N)`; `(N, N)`
 
-Exemplo de relacionamento **obrigatório** (mínimo 1) :
+Exemplo de relacionamento **obrigatório** (cardinalidade mínima 1) :
 - **1 `cliente`** pode ter no **mínimo 1** e no **máximo N `contas`****
 - **1 `conta`** pode ter no **mínimo 1** e no **máximo 1 `cliente`**
 
 ![cardinality](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/4513b708a647da7b7234c71727e966a737ee25f4/images/cardinality.png)
 
-Exemplo de relacionamento **opcional** (mínimo 0) :
+Exemplo de relacionamento **opcional** (cardinalidade mínima) :
 - **1 `empregado`** pode gerenciar no **mínimo 0** e no **máximo 1 `departamento`****
 - **1 `departamento`** pode ser gerenciado por no **mínimo 1** e no **máximo 1 `empregado`**
 
 ![cardinality-2](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/dd63d3308101a923f2fd8051415570d8712356b8/images/cardinality-2.png)
 
+### Auto-Relacionamento
+Auto-Relacionamento é um relacionamento entre ocorrências da mesma entidade
 
 Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
 
