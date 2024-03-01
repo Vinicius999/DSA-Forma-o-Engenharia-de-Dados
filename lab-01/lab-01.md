@@ -1,5 +1,5 @@
 Design e Implementação de Data Warehouses
-# Lab01 - Construindo um Diagrama ER com Ferramenta Case
+# Lab 01 - Construindo um Diagrama ER com Ferramenta Case
 
 
 Você foi contratado como consultor e em seu primeiro projeto você deve
