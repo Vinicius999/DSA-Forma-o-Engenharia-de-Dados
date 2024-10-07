@@ -221,6 +221,14 @@ Auto-Relacionamento é um relacionamento entre ocorrências da mesma entidade
 
 ![auto-relationchip](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/c40b004f784137e3a110a16236e48fac6ee2902a/images/auto-relationchip.png)
 
+Os relacionamentos são classificados ainda quanto a quantidade de entidades a se relacionarem. Os Auto-Relacionamentos são do tipo **unário**, já que há somente 1 entidade no relacionamento. Além de **unário**, existem ainda o rlacionamento binário (o mais comum) e o relaciomanento ternário:
+
+![auto-relationchip](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/unario-binario-ternario.png?raw=true)
+
+
+
+
+
 Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
 
 Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
