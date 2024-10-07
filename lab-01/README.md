@@ -55,3 +55,36 @@ performance.
 
 Seu trabalho agora é criar um Diagrama Entidade-Relacionamento que
 represente o modelo de negócio acima.
+
+---
+---
+## Solução
+
+| Entidade      | Atributo         | Relacionamento                                                       |
+| ------------- | ---------------- | -------------------------------------------------------------------- |
+| Empregado     | Cod_Empregado    | 1 Empregado Supervisiona N Empregados                                |
+|               | Pnome            | 1 Empregado Posui N Dependentes                                     |
+|               | Snome            | N Empregados Trabalham 1 Departamentos                               |
+|               | Sexo             | N Empregados Trabalham N Projetos                                    |
+|               | Endereço         | 1 Empregado Gerencia 1 Departamento                                  |
+|               | CPF              |                                                                      |
+|               | Salário          |                                                                      |
+|               | Data_Nascimento  |                                                                      |
+|               | Data_Registro    |                                                                      |
+| Departamento  | Cod_departamento | 1 Departamento Controla N Projetos                                   |
+|               | Nome             |                                                                      |
+|               | Número           |                                                                      |
+|               | Localidade       |                                                                      |
+| Projeto       | Cod_Projeto      |                                                                      |
+|               | Nome             |                                                                      |
+|               | Número           |                                                                      |
+|               | Localidade       |                                                                      |
+| Dependente    | Cod_Dependente   |                                                                      |
+|               | Pnome            |                                                                      |
+|               | Snome            |                                                                      |
+|               | Sexo             |                                                                      |
+|               | Data_Nascimento  |                                                                      |
+|               | Tipo_Relação     |                                                                      |
+
+
+![ER-Modeling](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/lab01-ER-modeling.png?raw=true)

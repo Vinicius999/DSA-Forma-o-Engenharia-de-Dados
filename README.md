@@ -235,3 +235,4 @@ Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
 
 <h4 align="center"> &#128679; Next: ##Bloco005 - Tipos de Entidade ... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
+
