@@ -225,6 +225,10 @@ Os relacionamentos são classificados ainda quanto a quantidade de entidades a s
 
 ![auto-relationchip](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/unario-binario-ternario.png?raw=true)
 
+Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
+
+Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
+
 
 ## Modelagem Dimensional
 
@@ -243,12 +247,19 @@ Benefícios da modelagem dimensional
 
 ### Dimensões
 
-Uma dimensão é uma coleção de atributos textuais que são altamente correlacionados entre si. Os atributos textuais ou não que descrevem coisas são organizados dentro das dimensões. Em uma base de dados de varejo são comuns dimensões como produto, armazém, cliente, promoção e tempo.
+Uma dimensão é uma coleção de atributos textuais que são altamente correlacionados entre si. Os atributos (textuais ou não) que descrevem coisas são organizados dentro das dimensões. Em uma base de dados de varejo são comuns dimensões como produto, armazém, cliente, promoção e tempo.
+
+Ref.: https://medium.com/@aasouzaconsult/modelagem-multidimensional-e65f02bbd60
 
 
-Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
+### Slowly Changing Dimension
 
-Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
+> Slowly Changing Dimensions (SCD), ou Dimensões que Mudam Lentamente em português, é um conceito utilizado em Business Intelligence (BI) para gerenciar mudanças em dados de dimensões ao longo do tempo.
+
+> As dimensões representam aspectos de negócios que são importantes para a análise, como clientes, produtos, localizações e tempo. À medida que os dados de dimensão mudam ao longo do tempo, é necessário gerenciar essas mudanças para manter a integridade dos dados históricos e permitir análises precisas.
+
+Ref.: https://medium.com/blog-do-zouza/manipulando-slowly-changing-dimensions-scd-usando-delta-tables-48e16bfb80ad
+
 
 <h4 align="center"> &#128679; Next: ##Bloco006 - Modelagem Dimensional... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
