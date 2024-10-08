@@ -226,6 +226,19 @@ Os relacionamentos são classificados ainda quanto a quantidade de entidades a s
 ![auto-relationchip](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/unario-binario-ternario.png?raw=true)
 
 
+## Modelagem Dimensional
+
+**Modelagem Dimensional** é uma técnica para construir modelos de negócio como **conjuntos de medidas** (FATOS) descritas através das diferentes **faces do negócio** (DIMENSÕES). 
+
+A origem do termo *dimensional* está relacionada com a ideia de que os dados devem ser agrupados de maneira a formar um cubo, ou hipercubo, que seria a estrutura padrãao para visualizar os dados.
+
+Benefícios da modelagem dimensional
+- Suporte a análise multidimensional
+- Cria um design que tem foco na performance
+- Permitir otimização
+- Design extensivo (mutável)
+- Permite acesso de várias ferramentas de análise
+
 
 
 
@@ -233,6 +246,6 @@ Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
 
 Ref.2: https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332
 
-<h4 align="center"> &#128679; Next: ##Bloco005 - Tipos de Entidade ... &#128679; </h4>
+<h4 align="center"> &#128679; Next: ##Bloco006 - Modelagem Dimensional... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
 
