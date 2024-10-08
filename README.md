@@ -232,6 +232,8 @@ Os relacionamentos são classificados ainda quanto a quantidade de entidades a s
 
 A origem do termo *dimensional* está relacionada com a ideia de que os dados devem ser agrupados de maneira a formar um cubo, ou hipercubo, que seria a estrutura padrãao para visualizar os dados.
 
+Um modelo dimensional é composto por uma tabela com uma chave composta, denominada tabela de fatos, e um conjunto de tabelas menores conhecidas como tabelas de dimensão, que possuem chaves simples (formadas por uma única coluna). Na verdade, a chave da tabela de fatos é uma combinação das chaves das tabelas de dimensão. Isto faz com que a representação gráfica do modelo dimensional assemelhe-se a uma estrela. Por este motivo, o modelo também é conhecido como modelo estrela (Kimball, 1998).
+
 Benefícios da modelagem dimensional
 - Suporte a análise multidimensional
 - Cria um design que tem foco na performance
@@ -239,7 +241,9 @@ Benefícios da modelagem dimensional
 - Design extensivo (mutável)
 - Permite acesso de várias ferramentas de análise
 
+### Dimensões
 
+Uma dimensão é uma coleção de atributos textuais que são altamente correlacionados entre si. Os atributos textuais ou não que descrevem coisas são organizados dentro das dimensões. Em uma base de dados de varejo são comuns dimensões como produto, armazém, cliente, promoção e tempo.
 
 
 Ref.1: https://www.alura.com.br/artigos/mer-e-der-funcoes
