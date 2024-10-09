@@ -258,20 +258,20 @@ Ref.: https://medium.com/@aasouzaconsult/modelagem-multidimensional-e65f02bbd60
 
 > As dimensões representam aspectos de negócios que são importantes para a análise, como clientes, produtos, localizações e tempo. À medida que os dados de dimensão mudam ao longo do tempo, é necessário gerenciar essas mudanças para manter a integridade dos dados históricos e permitir análises precisas.
 
-#### SCD tipo 1
+### SCD tipo 1
 
 Geralmente é chamado de método “**Sobrescrever**”, nesse método, quaisquer alterações nos dados de dimensão substituem o estado anterior dos dados com a mesma chave. Embora muito simples de implementar, este método sofre de uma grande desvantagem. Devido ao mecanismo de substituição, você não apenas perde o histórico anterior da dimensão, mas também o estado da tabela de fatos à qual ela é anexada. A imagem antes e depois da dimensão do cliente usando o método **SCD tipo 1** é mostrada abaixo.
 
 ![scd-tipo-1](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/scd-type-1.png?raw=true)
 
 
-#### SCD tipo 2
+### SCD tipo 2
 
 Também conhecido como método “**Adicionar um novo registro**”. Nesse método, o registro de alteração é adicionado como um novo registro à tabela de dimensões e marcado como “**Atual**” ou “**Ativo**”. Além disso, a versão anterior do registro é marcada como “**Expired**” ou “**Inactive**”. As várias versões (atual e histórica) de um registro são ligadas usando uma chave substituta . No nível da tabela, o SCD Tipo 2 é implementado adicionando colunas de carimbo de data/hora `StartDate` e `EndDate` para cada linha na tabela de dimensões. Além disso, uma coluna de status é adicionada para marcar se o registro é atual ou expirado status. A imagem antes e depois da dimensão do cliente usando o método **SCD Tipo 2** é mostrada abaixo.
 
 ![scd-tipo-2](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/scd-type-2.png?raw=true)
 
-#### SCD tipo 3
+### SCD tipo 3
 
 Também conhecido como método “**Adicionar um novo campo**”. Para cada alteração, a versão anterior e a versão atual são armazenadas como duas colunas distintas na mesma linha da tabela de dimensões. O **SCD Tipo 3** é relativamente mais fácil de implementar em comparação com o **SCD Tipo 2**, o histórico inclui apenas as versões atual e anterior.
 
@@ -281,6 +281,23 @@ Abaixo, temos uma ilustração dos **SCDs tipo 1**, **tipo 2** e **tipo 3**:
 
 ![scd-all](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/slowly-changing-dimentions-all.png?raw=true)
 
+Mais opções de SCD estão presentes no link abaixo
+
+### Tipos de Dimensões 
+
+Além das SLOWLY CHANGING DIMENSIONS, também temos:
+
+#### DEGENERATE DIMENSION
+Dimensão degenerada é uma chave de dimensão na tabela fato que não possui sua própria tabela de dimensão, ou seja, é a dimensão que não mereceu ser uma dimensão e foi inserida como coluna na tabela fato pois todos os atributos interessantes foram colocados em dimensões analíticas. O termo “dimensão degenerada” foi originado por Ralph Kimball.
+
+#### ROLE-PLAYING DIMENSION
+Uma única dimensão pode ser referenciada várias vezes em uma tabela fato, com cada referência vinculada a uma função logicamente distinta para a dimensão. Por exemplo, uma tabela fato pode ter várias datas, cada uma delas representada por uma chave estrangeira para a dimensão da data. É essencial que cada chave estrangeira se refira a uma visão separada da dimensão da data, para que as referências sejam independentes.
+
+#### CONFORMED DIMENSION
+As tabelas de dimensões estão em conformidade quando os atributos em tabelas de dimensões separadas têm os mesmos nomes de coluna. As informações de tabelas fato separadas podem ser combinadas em um único relatório usando atributos de dimensão conformes que estão associados a cada tabela de fato. As dimensões conformes definidas uma vez em colaboração com os representantes de governança de dados da empresa são reutilizadas em tabelas fato fornecendo eles fornecem consistência analítica e custos futuros reduzidos.
+
+#### JUNK DIMENSION
+A dimensão lixo é simplesmente uma estrutura que fornece um local para armazenar os atributos ou uma coleção de códigos transacionais aleatórios que não estão relacionados a nenhuma dimensão específica. Esses tipos de atributos não se integram facilmente às dimensões convencionais, como Cliente, Fornecedor e Produto, no entanto, alguns dos atributos diversos contém dados que têm um valor comercial significativo, dessa forma são armazenados em uma dimensão lixo.
 
 
 Ref.: https://medium.com/blog-do-zouza/manipulando-slowly-changing-dimensions-scd-usando-delta-tables-48e16bfb80ad
