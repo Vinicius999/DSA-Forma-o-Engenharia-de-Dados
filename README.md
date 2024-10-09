@@ -258,8 +258,32 @@ Ref.: https://medium.com/@aasouzaconsult/modelagem-multidimensional-e65f02bbd60
 
 > As dimensões representam aspectos de negócios que são importantes para a análise, como clientes, produtos, localizações e tempo. À medida que os dados de dimensão mudam ao longo do tempo, é necessário gerenciar essas mudanças para manter a integridade dos dados históricos e permitir análises precisas.
 
-Ref.: https://medium.com/blog-do-zouza/manipulando-slowly-changing-dimensions-scd-usando-delta-tables-48e16bfb80ad
+#### SCD tipo 1
 
+Geralmente é chamado de método “**Sobrescrever**”, nesse método, quaisquer alterações nos dados de dimensão substituem o estado anterior dos dados com a mesma chave. Embora muito simples de implementar, este método sofre de uma grande desvantagem. Devido ao mecanismo de substituição, você não apenas perde o histórico anterior da dimensão, mas também o estado da tabela de fatos à qual ela é anexada. A imagem antes e depois da dimensão do cliente usando o método **SCD tipo 1** é mostrada abaixo.
+
+![scd-tipo-1](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/scd-type-1.png?raw=true)
+
+
+#### SCD tipo 2
+
+Também conhecido como método “**Adicionar um novo registro**”. Nesse método, o registro de alteração é adicionado como um novo registro à tabela de dimensões e marcado como “**Atual**” ou “**Ativo**”. Além disso, a versão anterior do registro é marcada como “**Expired**” ou “**Inactive**”. As várias versões (atual e histórica) de um registro são ligadas usando uma chave substituta . No nível da tabela, o SCD Tipo 2 é implementado adicionando colunas de carimbo de data/hora `StartDate` e `EndDate` para cada linha na tabela de dimensões. Além disso, uma coluna de status é adicionada para marcar se o registro é atual ou expirado status. A imagem antes e depois da dimensão do cliente usando o método **SCD Tipo 2** é mostrada abaixo.
+
+![scd-tipo-2](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/scd-type-2.png?raw=true)
+
+#### SCD tipo 3
+
+Também conhecido como método “**Adicionar um novo campo**”. Para cada alteração, a versão anterior e a versão atual são armazenadas como duas colunas distintas na mesma linha da tabela de dimensões. O **SCD Tipo 3** é relativamente mais fácil de implementar em comparação com o **SCD Tipo 2**, o histórico inclui apenas as versões atual e anterior.
+
+![scd-tipo-3](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/scd-type-3.png?raw=true)
+
+Abaixo, temos uma ilustração dos **SCDs tipo 1**, **tipo 2** e **tipo 3**:
+
+![scd-all](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/slowly-changing-dimentions-all.png?raw=true)
+
+
+
+Ref.: https://medium.com/blog-do-zouza/manipulando-slowly-changing-dimensions-scd-usando-delta-tables-48e16bfb80ad
 
 <h4 align="center"> &#128679; Next: ##Bloco006 - Modelagem Dimensional... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
