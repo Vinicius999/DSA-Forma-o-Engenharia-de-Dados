@@ -319,6 +319,11 @@ Na prática, não existe fatos para a imensa maioria das combinações, o que si
 
 A **tabela fato** armazena o que ocorreu, é o fato propriamente dito, e ela está ligada, necessariamente, a duas ou mais dimensões.
 
+### Fatos Aditivos, Semi-Aditivos e Não-Aditivos
+
+![fact-types](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/fact-types.png?raw=true)
+
+
 <h4 align="center"> &#128679; Next: ##Bloco006 - Modelagem Dimensional... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
 
