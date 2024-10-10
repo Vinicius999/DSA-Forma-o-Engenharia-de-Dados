@@ -342,6 +342,6 @@ Em resumo, dados normalizados são ideais para garantir consistência e economiz
 
 
 
-<h4 align="center"> &#128679; Next: ##Bloco007 - Dados Normalizados e Denormalizados... &#128679; </h4>
+<h4 align="center"> &#128679; Next: ##Bloco007 - Star Schema vs Snowflake... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
 
