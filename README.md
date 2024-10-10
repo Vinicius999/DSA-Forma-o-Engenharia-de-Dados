@@ -323,7 +323,25 @@ A **tabela fato** armazena o que ocorreu, é o fato propriamente dito, e ela est
 
 ![fact-types](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/fact-types.png?raw=true)
 
+## Dados Normalizados (OLTP) x Dados Desnormalizados (OLAP)
 
-<h4 align="center"> &#128679; Next: ##Bloco006 - Modelagem Dimensional... &#128679; </h4>
+| CRITÉRIO                  | DADOS NORMALIZADOS                                      | DADOS DESNORMALIZADOS                                     |
+|---------------------------|--------------------------------------------------------|---------------------------------------------------------|
+| **Consistência de Dados**  | Menor redundância e duplicidade, garantindo mais consistência entre os dados. | Maior redundância de dados pode causar inconsistência, mas facilita o acesso. |
+| **Manutenção**            | Facilita a manutenção e atualização, já que uma alteração em um dado afeta apenas uma tabela. | Manutenção mais difícil, pois alterações podem exigir atualizações em várias tabelas. |
+| **Espaço de Armazenamento**| Ocupa menos espaço, pois evita a duplicação de dados.  | Ocupa mais espaço devido à duplicação de dados.          |
+| **Inserção e Atualização** | Menos propenso a erros de inserção e atualização, já que os dados estão organizados em várias tabelas. | Mais propenso a erros, pois as mesmas informações podem estar em várias partes. |
+| **Integridade Referencial**| Garantida por chaves estrangeiras e regras de integridade. | Pode ser mais difícil de manter devido à redundância.     |
+| **Desempenho em Escrita**  | Operações de escrita (inserção/atualização) podem ser mais lentas, já que as operações envolvem múltiplas tabelas. | Operações de escrita mais rápidas, pois a redundância minimiza a necessidade de junções complexas. |
+| **Desempenho em Leitura**  | Operações de leitura podem ser mais lentas devido ao uso de várias junções. | Leituras mais rápidas, pois os dados estão pré-agregados e prontos para uso. |
+| **Consulta Simples**       | Requer junções complexas entre várias tabelas para consultas mais simples. | Consultas são mais rápidas e diretas, já que os dados estão mais acessíveis. |
+| **Escalabilidade**         | Mais escalável para bancos de dados com muitas operações de escrita. | Mais adequado para cenários com muitas leituras e menos escritas. |
+| **Complexidade**           | Estrutura mais complexa, exigindo maior planejamento de design. | Estrutura mais simples em termos de consultas. |
+
+Em resumo, dados normalizados são ideais para garantir consistência e economizar espaço, sendo mais vantajosos para operações de escrita e manutenção. Já os dados denormalizados oferecem maior desempenho de leitura e são mais adequados para cenários em que as consultas são feitas com maior frequência do que as inserções ou atualizações.
+
+
+
+<h4 align="center"> &#128679; Next: ##Bloco007 - Dados Normalizados e Denormalizados... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
 
