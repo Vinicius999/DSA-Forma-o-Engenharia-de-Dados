@@ -328,7 +328,7 @@ A **tabela fato** armazena o que ocorreu, é o fato propriamente dito, e ela est
 | CRITÉRIO                  | DADOS NORMALIZADOS                                      | DADOS DESNORMALIZADOS                                     |
 |---------------------------|--------------------------------------------------------|---------------------------------------------------------|
 | **Consistência de Dados**  | Menor redundância e duplicidade, garantindo mais consistência entre os dados. | Maior redundância de dados pode causar inconsistência, mas facilita o acesso. |
-| **Manutenção**            | Facilita a manutenção e atualização, já que uma alteração em um dado afeta apenas uma tabela. | Manutenção mais difícil, pois alterações podem exigir atualizações em várias tabelas. |
+| **Manutenção**             | Facilita a manutenção e atualização, já que uma alteração em um dado afeta apenas uma tabela. | Manutenção mais difícil, pois alterações podem exigir atualizações em várias tabelas. |
 | **Espaço de Armazenamento**| Ocupa menos espaço, pois evita a duplicação de dados.  | Ocupa mais espaço devido à duplicação de dados.          |
 | **Inserção e Atualização** | Menos propenso a erros de inserção e atualização, já que os dados estão organizados em várias tabelas. | Mais propenso a erros, pois as mesmas informações podem estar em várias partes. |
 | **Integridade Referencial**| Garantida por chaves estrangeiras e regras de integridade. | Pode ser mais difícil de manter devido à redundância.     |
@@ -340,7 +340,21 @@ A **tabela fato** armazena o que ocorreu, é o fato propriamente dito, e ela est
 
 Em resumo, dados normalizados são ideais para garantir consistência e economizar espaço, sendo mais vantajosos para operações de escrita e manutenção. Já os dados denormalizados oferecem maior desempenho de leitura e são mais adequados para cenários em que as consultas são feitas com maior frequência do que as inserções ou atualizações.
 
+### Star Schema
 
+A chave primária da tabela de fatos é formada pelo conjunto das chaves estrangeiras provenientes das dimensões, de tal forma forma que ela é sempre
+a expressão de um relacionamento n-ário entre todas as dimensões.
+
+Os fatos são os atributos da tabela de fatos. Não há representação explícita para as hierarquias no esquema estrela. Elas são implicitamente representadas
+pelos atributos das tabelas de dimensão. A aditividade também não é representada.
+
+### Snowflake schema
+
+O snowflake é uma variação do star schema, que busca fazer a normalização nas tabelas de dimensão, diminuindo a redundância de dados ao criar tabelas auxiliares deixando explícita a hierarquia com tabelas auxiliares.
+- É mais flexível a mudanças
+- Possui metadados mais complexos
+- O processo de ETL pode ser um pouco mais rápido
+- Degrada performance de queries 
 
 <h4 align="center"> &#128679; Next: ##Bloco007 - Star Schema vs Snowflake... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
