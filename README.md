@@ -354,7 +354,22 @@ O snowflake é uma variação do star schema, que busca fazer a normalização n
 - É mais flexível a mudanças
 - Possui metadados mais complexos
 - O processo de ETL pode ser um pouco mais rápido
-- Degrada performance de queries 
+- Degrada performance de queries
+
+### Star schema and Snowflake schema
+
+1. Um Star schema tem tabelas de dimensões desnormalizadas, enquanto um Snowflake schema tem tabelas de dimensões normalizadas.
+
+2. Um Star schema é mais fácil de conceber e implementar do que um Snowflake schema.
+
+3. Um Star schema pode ser mais eficiente para consulta do que um Snowflake schema, porque há menos JOINs entre tabelas.
+
+4. Um Star schema pode exigir mais espaço de armazenamento do que um Snowflake schema, devido aos dados desnormalizados.
+
+5. Um Star schema pode ser mais difícil de atualizar do que um Snowflake schema, devido aos dados desnormalizados.
+
+6. Um Star schema pode ser mais difícil de solucionar problemas do que um Snowflake schema, devido aos dados desnormalizados.
+
 
 <h4 align="center"> &#128679; Next: ##Bloco007 - Star Schema vs Snowflake... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
