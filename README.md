@@ -359,21 +359,45 @@ O snowflake é uma variação do star schema, que busca fazer a normalização n
 ### Star schema and Snowflake schema
 
 1. Um Star schema tem tabelas de dimensões desnormalizadas, enquanto um Snowflake schema tem tabelas de dimensões normalizadas.
-
 2. Um Star schema é mais fácil de conceber e implementar do que um Snowflake schema.
-
 3. Um Star schema pode ser mais eficiente para consulta do que um Snowflake schema, porque há menos JOINs entre tabelas.
-
 4. Um Star schema pode exigir mais espaço de armazenamento do que um Snowflake schema, devido aos dados desnormalizados.
-
 5. Um Star schema pode ser mais difícil de atualizar do que um Snowflake schema, devido aos dados desnormalizados.
-
 6. Um Star schema pode ser mais difícil de solucionar problemas do que um Snowflake schema, devido aos dados desnormalizados.
 
 ### Dimensão tempo
 
 ![fact-types](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/dimension-time.png?raw=true)
 
-<h4 align="center"> &#128679; Next: ##Bloco007 - Star Schema vs Snowflake... &#128679; </h4>
+### Hierarquia de Dimensões
+
+A hierarquia de dimensões é uma estrutura que organiza dados em níveis, facilitando a análise e a navegação nas informações. É comum em modelos de dados multidimensionais, como em data warehouses.
+
+As hierarquias ajudam a agregar dados em diferentes níveis de granularidade. Por exemplo:
+
+1. Tempo
+  - Ano
+  - Trimestre
+  - Mês
+  - Dia
+
+2. Localização
+  - País
+  - Estado
+  - Cidade
+
+3. Produto
+  - Categoria
+  - Subcategoria
+  - Produto
+    
+Exemplos Práticos:
+- **Análise de Vendas:** Você pode analisar vendas por ano, depois detalhar por trimestre e mês.
+- **Relatório de Desempenho Regional:** Agrupar dados de vendas por país, detalhando por estado e cidade para identificar regiões de maior desempenho.
+- **Gestão de Estoque:** Classificar produtos por categoria e subcategoria para facilitar a análise de estoque.
+  
+Essas hierarquias ajudam na criação de relatórios mais claros e na identificação de tendências nos dados.
+
+<h4 align="center"> &#128679; Next: ##Bloco008 - Regras de Ouro para Modelagem Dimensional... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
 
