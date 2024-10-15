@@ -398,6 +398,10 @@ Exemplos Práticos:
   
 Essas hierarquias ajudam na criação de relatórios mais claros e na identificação de tendências nos dados.
 
+
+
+
+
 <h4 align="center"> &#128679; Next: ##Bloco008 - Regras de Ouro para Modelagem Dimensional... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
 
