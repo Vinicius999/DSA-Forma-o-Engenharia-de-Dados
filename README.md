@@ -370,6 +370,9 @@ O snowflake é uma variação do star schema, que busca fazer a normalização n
 
 6. Um Star schema pode ser mais difícil de solucionar problemas do que um Snowflake schema, devido aos dados desnormalizados.
 
+### Dimensão tempo
+
+![fact-types](https://github.com/Vinicius999/DSA-Formacao-Engenharia-de-Dados/blob/main/images/dimension-time.png?raw=true)
 
 <h4 align="center"> &#128679; Next: ##Bloco007 - Star Schema vs Snowflake... &#128679; </h4>
 <h4 align="center"> &#128679; Em construção... &#128679; </h4>
