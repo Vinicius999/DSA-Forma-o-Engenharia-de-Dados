@@ -376,20 +376,20 @@ A hierarquia de dimensões é uma estrutura que organiza dados em níveis, facil
 As hierarquias ajudam a agregar dados em diferentes níveis de granularidade. Por exemplo:
 
 1. Tempo
-  - Ano
-  - Trimestre
-  - Mês
-  - Dia
+    - Ano
+    - Trimestre
+    - Mês
+    - Dia
 
 2. Localização
-  - País
-  - Estado
-  - Cidade
+    - País
+    - Estado
+    - Cidade
 
 3. Produto
-  - Categoria
-  - Subcategoria
-  - Produto
+    - Categoria
+    - Subcategoria
+    - Produto
     
 Exemplos Práticos:
 - **Análise de Vendas:** Você pode analisar vendas por ano, depois detalhar por trimestre e mês.
